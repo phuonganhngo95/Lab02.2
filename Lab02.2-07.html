@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 7</title>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+
+        #num {
+            text-align: right;
+        }
+
+        button {
+            width: 100px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <table align="center" cellpadding="5">
+        <tr>
+            <td align="right">
+                <label for="slider">Slider</label>
+            </td>
+            <td>
+                <input type="range" name="slider" id="slider" value="0" max="100">
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                <label for="num">Numeric spinner</label>
+            </td>
+            <td>
+                <input type="number" name="num" id="num" value="80" min="0">
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                <label for="date">Date picker</label>
+            </td>
+            <td>
+                <input type="datetime" name="date" id="date" value="2010-10-05">
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                <label for="color">Color picker</label>
+            </td>
+            <td>
+                <input type="text" name="color" id="color" value="ff0000">
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                <label for="text-field">Text field with placeholder</label>
+            </td>
+            <td>
+                <input type="text" name="text-field" id="text-field" placeholder="Insert your text here">
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                <label for="url">Url field</label>
+            </td>
+            <td>
+                <input type="url" name="url" id="url" placeholder="http://net.tutsplus.com/">
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                <label for="email">Email field</label>
+            </td>
+            <td>
+                <input type="email" name="email" id="email" placeholder="contact@qhinda.net">
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="submit">Submit form</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

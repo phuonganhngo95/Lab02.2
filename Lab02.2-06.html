@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 6</title>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        
+        input[type="range"] {
+            width: 350px;
+        }
+
+        button {
+            width: 100px;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <table align="center" width="500px">
+        <tr>
+            <td colspan="3" align="center">
+                <h3>Chào mừng bạn đến với tạp chí HTML5 & CSS3</h3>
+                <hr>
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                <label for="username">Tên đăng nhập:</label>
+            </td>
+            <td colspan="2">
+                <input type="text" name="username" id="username" size="45px">
+            </td>
+        </tr>
+        <tr>
+            <td align="right">Mật khẩu:</td>
+            <td colspan="2">
+                <input type="password" name="password" id="password" size="45px">
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                <label for="email">Email:</label>
+            </td>
+            <td colspan="2">
+                <input type="email" name="email" id="email" size="45px">
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                <label for="city">Thành phố:</label>
+            </td>
+            <td colspan="2">
+                <input type="text" name="city" id="city" size="45px">
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                <label for="age">Độ tuổi trung bình:</label>
+            </td>
+            <td colspan="2">
+                <input type="range" name="age" id="age" value="30" max="100">
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">Bạn muốn theo dõi bài viết từ chủ đề nào?</td>
+        </tr>
+        <tr align="left">
+            <td></td>
+            <td>
+                <input type="checkbox" name="html-css" id="html5-cb">
+                <label for="html5-cb">HTML5 cơ bản</label>
+            </td>
+            <td>
+                <input type="checkbox" name="html-css" id="css3-cb">
+                <label for="css3-cb">CSS3 cơ bản</label>
+            </td>
+        </tr>
+        <tr align="left">
+            <td></td>
+            <td>
+                <input type="checkbox" name="html-css" id="html5-nc">
+                <label for="html5-nc">HTML5 nâng cao</label>
+            </td>
+            <td>
+                <input type="checkbox" name="html-css" id="css3-nc">
+                <label for="css3-nc">CSS3 cơ bản</label>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3" align="right">
+                <button type="reset">Làm lại</button>
+                <button type="submit">Đăng kí</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

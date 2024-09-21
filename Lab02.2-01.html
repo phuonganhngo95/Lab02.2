@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 1</title>
+    <style>
+        form {
+            width: fit-content;
+            margin: 10px auto;
+        }
+
+        fieldset {
+            border: none;
+        }
+
+        legend {
+            text-align: center;
+        }
+
+        .hidden {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend><h2>Đăng nhập</h2></legend>
+            <table border="1" cellspacing="0" cellpadding="2">
+                <tr>
+                    <td>
+                        <label for="user-code">Mã người dùng:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="user-code" id="user-code" value="ptnhung">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Mật khẩu</label>
+                    </td>
+                    <td>
+                        <input type="password" name="password" id="password" value="123456789">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <button id="loginBtn" type="submit">Đồng ý</button>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td colspan="2" id="linkContainer" class="hidden">ptnhung</td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

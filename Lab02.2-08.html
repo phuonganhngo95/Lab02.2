@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 8</title>
+</head>
+<body>
+    <table cellspacing="15" align="center">
+        <caption><h1>Thông tin đăng kí</h1></caption>
+        <tr>
+            <td>
+                <label for="fullname">Họ và Tên</label>
+            </td>
+            <td>
+                <input type="text" name="fullname" id="fullname" value="Nguyễn Phượng Hoàng">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="username">Tên đăng nhập</label>
+            </td>
+            <td>
+                <input type="text" name="username" id="username" value="nphoang">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="password">Mật khẩu</label>
+            </td>
+            <td>
+                <input type="password" name="password" id="password" value="123456789">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="gender">Giới tính</label>
+            </td>
+            <td>
+                <input type="radio" name="gender" id="male" checked>
+                <label for="male">Nam</label>
+                <input type="radio" name="gender" id="female">
+                <label for="female">Nữ</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="language">Ngôn ngữ lập trình</label>
+            </td>
+            <td>
+                <input type="checkbox" name="language" id="c#" checked>
+                <label for="c#">Ngôn ngữ C#</label> <br>
+                <input type="checkbox" name="language" id="java">
+                <label for="java">Ngôn ngữ Java</label> <br>
+                <input type="checkbox" name="language" id="php" checked>
+                <label for="php">Ngôn ngữ PHP</label> <br>
+                <input type="checkbox" name="language" id="other">
+                <label for="other">Ngôn ngữ khác</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label for="city">Tỉnh thành</label>
+            </td>
+            <td>
+                <select>
+                    <option value="">--Chọn--</option>
+                    <option value="HN" selected>Hà Nội</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <button type="submit">Đăng kí</button>
+                <button type="reset">Reset</button>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 2</title>
+    <style>
+        form {
+            width: fit-content;
+            margin: 10px auto;
+        }
+
+        fieldset {
+            border: none;
+        }
+
+        td label {
+          width: 135px;  
+        }
+
+        #fullname {
+            width: 250px;
+        }
+
+        #address {
+            width: 200px;
+        }
+
+        #tel {
+            width: 150px;
+        }
+
+        .sp input {
+            width: 110px;
+            text-align: left;
+        }
+
+        #attender {
+            width: 70px;
+        }
+
+        .note {
+            color: rgb(205, 22, 22);
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend><h2>Phiếu đăng kí tham gia chương trình khuyến mãi</h2></legend>
+            <table border="1" cellspacing="0" align="center" width="500px">
+                <tr>
+                    <td>
+                        <label for="fullname">Họ và tên</label>
+                    </td>
+                    <td>
+                        <input type="text" name="fullname" id="fullname" value="Nguyễn Ngọc Quỳnh Nga">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address">Địa chỉ</label>
+                    </td>
+                    <td>
+                        <input type="text" name="address" id="address" value="2Bia Hùng Vương, Q10">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="tel">Điện thoại</label>
+                    </td>
+                    <td>
+                        <input type="tel" name="tel" id="tel" value="0909097506">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">Phái</label>
+                    </td>
+                    <td>
+                        <input type="radio" name="gender" id="male">
+                        <label for="male">Nam</label>
+                        <input type="radio" name="gender" id="female" checked>
+                        <label for="female">Nữ</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="career">Nghề nghiệp</label>
+                    </td>
+                    <td>
+                        <select>
+                            <option value="BS">Bác sĩ</option>
+                            <option value="KS">Kĩ sư</option>
+                            <option value="GV" selected>Giáo viên</option>
+                            <option value="Other">Khác</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="sp">Chọn loại sản phẩm tham gia</label>
+                    </td>
+                    <td class="sp">
+                        <input type="button" name="sp" id="tooth" value="Kem đánh răng"> <br>
+                        <input type="button" name="sp" id="bot-giat" value="Bột giặt"> <br>
+                        <input type="button" name="sp" id="goi-dau" value="Dầu gội đầu"> <br>
+                        <input type="button" name="sp" id="sua-tam" value="Sữa tắm">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="attender">Số người dự đoán tham gia</label>
+                    </td>
+                    <td>
+                        <input type="number" name="attender" id="attender" min="0" value="250000">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <button type="submit">Đồng ý</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center" class="note">Bạn đã đăng kí thành công!!!</td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>

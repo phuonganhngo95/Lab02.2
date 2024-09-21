@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 4</title>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+
+        body form {
+            width: 500px;
+        }
+
+        form {
+            width: fit-content;
+            margin: 10px auto;
+        }
+
+        fieldset {
+            border: none;
+        }
+
+        hr {
+            margin: 0 0 15px 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        input {
+            padding: 5px;
+        }
+
+        .sign-table {
+            width: 500px;
+        }
+
+        .sign-table td {
+            width: 100px;
+            
+        }
+
+        .small-text {
+            font-size: 14px;
+        }
+
+        .sign-up {
+            width: 100px;
+            height: 30px;
+        }
+
+        .note {
+            margin-top: -15px;
+        }
+    </style>
+</head>
+<body>
+    <form action="" method="post">
+        <table align="center">
+            <tr>
+                <td>
+                    <fieldset>
+                        <legend>Email or Phone</legend>
+                        <input type="text" name="user" id="user"> <br>
+                        <input type="checkbox" name="check" id="check">
+                        <label for="check">Keep me logged in</label>
+                    </fieldset>
+                </td>
+                <td>
+                    <fieldset>
+                        <legend>Password</legend>
+                        <input type="password" name="password" id="password"> <br>
+                        <a href="#">Forgot your password?</a>
+                    </fieldset>
+                </td>
+                <td>
+                    <button type="submit">Log in</button>
+                </td>
+            </tr>
+        </table>
+        <fieldset>
+            <legend>
+                <h2>Sign Up</h2>
+                <p>It's free and always will be.</p>
+            </legend>
+            <hr>
+            <table cellpadding="2" class="sign-table">
+                <tr>
+                    <td align="right">
+                        <label for="firstname">First Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="firstname" id="firstname" size="45px">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="lastname">Last Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="lastname" id="lastname" size="45px">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="email">Your Email:</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email" size="45px">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="email">Re-enter Email:</label>
+                    </td>
+                    <td>
+                        <input type="email" name="email" id="email" size="45px">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="password">New Password:</label>
+                    </td>
+                    <td>
+                        <input type="password" name="password" id="password" size="45px">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="gender">I am:</label>
+                    </td>
+                    <td>
+                        <select>
+                            <option value="">Select Sex:</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <label for="birth">Birthday:</label>
+                    </td>
+                    <td>
+                        <select>
+                            <option value="">Month:</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="">...</option>
+                        </select>
+                        <select>
+                            <option value="">Day:</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="">...</option>
+                        </select>
+                        <select>
+                            <option value="">Year:</option>
+                            <option value="2024">2024</option>
+                            <option value="2023">2023</option>
+                            <option value="">...</option>
+                        </select>
+                        <br>
+                        <a href="#" class="small-text">Why do I need to provide my birthday?</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2" class="small-text">By clicking Sign Up, you agree to our <a href="#">Terms</a> and that you have read and understand our <a href="#">Data Use Policy</a>, including our <a href="#">Cookie Use</a>.</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="2">
+                        <button type="submit" class="sign-up">Sign Up</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><hr></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <p class="note">
+                            <a href="#">Create a Page</a> for a celebrity, band or business.
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
